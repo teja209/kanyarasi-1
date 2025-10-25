@@ -94,7 +94,9 @@ ELEVENLABS_API_KEY="9097e483eca4f09ba180332f7d06bcac5014defc7ac980efb42472115974
 ```bash
 npm run dev
 ```
-
+If running on windows machine make the following changes:
+package.json >>> "dev": "cross-env NODE_ENV=development tsx server/index.ts",
+and then run npm run dev 
 The application will start on **http://localhost:5001**
 
 Open your browser and navigate to the URL to start using Mood.ai!
